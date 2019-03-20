@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+war.archiveName 'spring-app.war'
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat:1.5.1.RELEASE'    
+} 
